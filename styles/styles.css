@@ -11,37 +11,44 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    position: relative;
 }
 
 main{
+    height: 100vh;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    transform:translate(-50%);
+    color:#f43535;
+}
+
+.titulo-botones{
+    font-size:55px;
+    margin-bottom: 1rem;
 }
 
 .lista-botones{
     list-style: none;
-    margin-top: 2rem;
+    height: auto;
+    margin-top: 1rem;
 }
 
-.red-social{
+li{
     margin-top: 1rem;
+}
+
+.boton-musica{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0b7689;
+    color: #f43535;
+    padding: 15px;
+    border-radius: 15px;
+    width: 15%;
 }
 
 .youtube-btn{
     display: none;
 }
 
-.lista-redes{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    background-color: lawngreen;
-}
+/*FOOTER*/
 
 footer{
     display: flex;
@@ -52,16 +59,69 @@ footer{
     justify-content: space-between;
 }
 
-.juani{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 2rem;
-    justify-content: center;
-}
-
 .redes-sociales{
     align-items: center;
     justify-content: center;
-    margin-left: 2rem;
+}
+
+.lista-redes{
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-social{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+    padding: 1rem;
+}
+
+.red-social a{
+    text-decoration: none;
+    color: white;
+    background-color: #f43535;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.red-social a:hover{
+    background-color: #834a4a;
+}
+
+.juani{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    vertical-align:middle;
+    text-align: center;
+    line-height: 1rem;
+}
+
+/*MEDIAS QUERY*/
+
+@media (max-width:687px){
+    .titulo-botones{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:562px){
+    iframe{
+        width: 95%;
+    }
+}
+
+@media (max-width:400px) {
+    .logo{
+        width: 95%;
+        height: 95%;
+    }
 }

@@ -5,8 +5,8 @@
 }
 
 body{
-    height: 100vh;
-    background-image: url(../images/background.png);
+    min-height: 100vh;
+    background-image: url(../images/background.jpg);
     backdrop-filter: blur(7px);
     background-repeat: no-repeat;
     background-size:cover;
@@ -14,7 +14,6 @@ body{
 }
 
 main{
-    height: 100vh;
     text-align: center;
     color:#f43535;
 }
@@ -22,6 +21,9 @@ main{
 .titulo-botones{
     font-size:55px;
     margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .lista-botones{
@@ -35,13 +37,22 @@ li{
 }
 
 .boton-musica{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
     display: inline-block;
     text-decoration: none;
-    background-color: #0b7689;
+    background-color: #0b7689b4 ;
     color: #f43535;
+    text-shadow: 0.1em 0.1em 0.15em black;
     padding: 15px;
-    border-radius: 15px;
+    border-radius:100px 0px 100px 0;
     width: 15%;
+    transition: transform .5s;
+}
+
+.boton-musica:hover{
+    transform: scale(1.2);
 }
 
 .youtube-btn{
@@ -57,6 +68,7 @@ footer{
     width: 100%;
     color: white;
     justify-content: space-between;
+    margin-top: 0;
 }
 
 .redes-sociales{
@@ -66,8 +78,6 @@ footer{
 
 .lista-redes{
     list-style: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,21 +87,18 @@ footer{
 .red-social{
     margin-top: 1rem;
     margin-left: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 25px;
-    padding: 1rem;
 }
 
 .red-social a{
     text-decoration: none;
     color: white;
-    background-color: #f43535;
-    padding: 1rem;
     border-radius: 15px;
 }
 
-.red-social a:hover{
-    background-color: #834a4a;
+.red-social a i{
+    font-size: 40px;
+    margin-left: 1rem;
+    
 }
 
 .juani{
@@ -103,6 +110,8 @@ footer{
     vertical-align:middle;
     text-align: center;
     line-height: 1rem;
+    font-size: 13px;
+    color: rgb(185, 185, 185);
 }
 
 /*MEDIAS QUERY*/

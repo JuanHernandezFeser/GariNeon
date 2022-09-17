@@ -29,7 +29,7 @@ main{
 }
 
 .lista-botones li{
-    margin-top: 2rem;
+    margin-top: 7rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -38,7 +38,7 @@ main{
     width: 200px;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     border: white solid;
     border-width: 1px;
     padding-top: 1rem;
@@ -57,7 +57,6 @@ main{
 footer{
     display: flex;
     position: absolute;
-    z-index: -1;
     bottom: 0%;
     width: 100%;
     color: rgba(255, 255, 255, 0.897);
@@ -66,6 +65,8 @@ footer{
 }
 
 .lista-redes{
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -75,7 +76,6 @@ footer{
 
 .red-social{
     margin-top: 1rem;
-    margin-left: 1rem;
 }
 
 .red-social a{
@@ -84,12 +84,11 @@ footer{
 }
 
 .red-social a i{
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-left: 1rem;
 }
 
 h3,h4{
@@ -103,6 +102,7 @@ h3,h4{
     align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 0.5rem;
     vertical-align:middle;
     text-align: center;
     line-height: 1rem;
@@ -116,11 +116,16 @@ h3,h4{
 @media(max-width:795px){
     .lista-botones{
         flex-direction: column;
+        margin-top: 0;
+    }
+
+    .lista-botones li{
+        margin-top: 1rem;
     }
 
     .red-social a i{
         padding: 0;
-        margin-left: 0;
+        margin-left: 1rem;
         font-size: 25px;
     }
 
@@ -144,10 +149,19 @@ h3,h4{
     .yt-video{
         width: 95%;
     }
+
+    .lista-redes{
+        margin-left: 0.5rem;
+    }
+
+    .juani{
+        font-size: 8px;
+        margin-right: 0.5rem;
+    }
 }
 
-@media (max-height:820px){
+@media (max-height:800px){
     main{
-        height: 820px;
+        height: 800px;
     }
 }

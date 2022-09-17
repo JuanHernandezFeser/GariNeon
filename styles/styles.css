@@ -57,6 +57,7 @@ main{
 footer{
     display: flex;
     position: absolute;
+    z-index: -1;
     bottom: 0%;
     width: 100%;
     color: rgba(255, 255, 255, 0.897);
@@ -112,21 +113,41 @@ h3,h4{
 
 /*MEDIAS QUERY*/
 
-@media (max-width:687px){
-    .titulo-botones{
-        font-size: 40px;
+@media(max-width:795px){
+    .lista-botones{
+        flex-direction: column;
+    }
+
+    .red-social a i{
+        padding: 0;
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    .juani{
+        font-size: 10px;
     }
 }
 
-@media(max-width:562px){
-    iframe{
-        width: 95%;
+@media (max-width:467px){
+    .lista-botones{
+        margin: 0;
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:425px) {
     .logo{
         width: 95%;
         height: 95%;
+    }
+
+    .yt-video{
+        width: 95%;
+    }
+}
+
+@media (max-height:820px){
+    main{
+        height: 820px;
     }
 }
